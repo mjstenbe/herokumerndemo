@@ -33,7 +33,7 @@ const server = http
           response.end("Internal Server Error");
         });
     } else {
-      response.write("Joku muu sivu");
+      response.write("Etusivu");
       response.end();
     }
   })
