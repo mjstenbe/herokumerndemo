@@ -1,5 +1,6 @@
 var axios = require("axios");
 var http = require("http");
+const PORT = process.env.PORT || 3000;
 
 const server = http
   .createServer(function (request, response) {
@@ -36,7 +37,7 @@ const server = http
       response.end();
     }
   })
-  .listen(3001);
+  .listen(PORT);
 
 function parse(data) {
   console.log("Parse");
